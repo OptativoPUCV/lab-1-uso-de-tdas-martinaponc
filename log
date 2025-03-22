@@ -74,3 +74,20 @@ Sat 22 Mar 2025 01:07:33 AM UTC:
  tests:  1|4
 total_score: 10/70
 62ad442
+Sat 22 Mar 2025 02:14:56 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:4: error: expected ‘,’ or ‘;’ before ‘while’
+   64 |    while(L =! NULL)
+      |    ^~~~~
+exercises.c:63:8: error: unused variable ‘suma’ [-Werror=unused-variable]
+   63 |    int suma = 0
+      |        ^~~~
+exercises.c:67:1: error: control reaches end of non-void function [-Werror=return-type]
+   67 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1e89e56
