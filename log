@@ -136,3 +136,17 @@ Sat 22 Mar 2025 02:20:12 PM UTC:
  1 file changed, 5 insertions(+), 1 deletion(-)
  tests:  0|0
 f3aa7ba
+Sat 22 Mar 2025 02:37:34 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:4: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   64 |    while(L != NULL)
+      |    ^~~~~
+exercises.c:66:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   66 |       L = next(L);
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+e8d5fd2
