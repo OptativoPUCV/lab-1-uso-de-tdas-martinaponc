@@ -105,3 +105,15 @@ exercises.c:63:8: error: variable ‘suma’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 790d810
+Sat 22 Mar 2025 02:15:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:9: error: invalid use of undefined type ‘struct List’
+   65 |    suma += L;
+      |         ^~
+exercises.c:65:9: error: assignment to ‘int’ from ‘List *’ makes integer from pointer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+b304b9f
