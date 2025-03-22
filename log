@@ -39,3 +39,26 @@ In file included from test.c:2:
       |              ^~~~~~
 Compilation failed
 9be487a
+Sat 22 Mar 2025 01:06:47 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:40: error: passing argument 1 of ‘realloc’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |         int * elemento = (int*)realloc(sizeof(int));
+      |                                        ^~~~~~~~~~~
+      |                                        |
+      |                                        long unsigned int
+In file included from test.c:2:
+/nix/store/lcxvgkg659vbvdq86mhxa599wn48f35c-glibc-2.40-36-dev/include/stdlib.h:683:29: note: expected ‘void *’ but argument is of type ‘long unsigned int’
+  683 | extern void *realloc (void *__ptr, size_t __size)
+      |                       ~~~~~~^~~~~
+exercises.c:48:32: error: too few arguments to function ‘realloc’
+   48 |         int * elemento = (int*)realloc(sizeof(int));
+      |                                ^~~~~~~
+/nix/store/lcxvgkg659vbvdq86mhxa599wn48f35c-glibc-2.40-36-dev/include/stdlib.h:683:14: note: declared here
+  683 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a4525f0
