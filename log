@@ -91,3 +91,17 @@ exercises.c:67:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 1e89e56
+Sat 22 Mar 2025 02:15:23 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:10: error: wrong type argument to unary plus
+   65 |    suma =+ L;
+      |          ^
+exercises.c:63:8: error: variable ‘suma’ set but not used [-Werror=unused-but-set-variable]
+   63 |    int suma = 0;
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+790d810
