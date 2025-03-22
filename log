@@ -164,3 +164,17 @@ exercises.c:66:7: note: ...this statement, but the latter is misleadingly indent
 cc1: all warnings being treated as errors
 Compilation failed
 c790b8b
+Sat 22 Mar 2025 02:38:08 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:4: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   65 |    while(L != NULL)
+      |    ^~~~~
+exercises.c:68:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   68 |       L = next(L);
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+25347f5
