@@ -8,3 +8,14 @@ Sat 22 Mar 2025 12:58:35 AM UTC:
  tests:  0|5
 total_score: 0/70
 0a2b508
+Sat 22 Mar 2025 12:59:29 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:19: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   49 |          elemento = i;
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+c7489dc
