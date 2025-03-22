@@ -200,3 +200,17 @@ Sat 22 Mar 2025 05:06:50 PM UTC:
  tests:  3|2
 total_score: 40/70
 2e32ae0
+Sat 22 Mar 2025 05:16:27 PM UTC: 
+ exercises.c | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:121:11: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  121 |    return P2;
+      |           ^~
+exercises.c:101:6: note: declared here
+  101 | void copia_pila(Stack* P1, Stack* P2)
+      |      ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+213453c
