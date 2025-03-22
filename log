@@ -25,3 +25,17 @@ Sat 22 Mar 2025 01:03:10 AM UTC:
  tests:  1|4
 total_score: 10/70
 ff1ea86
+Sat 22 Mar 2025 01:06:35 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:32: error: too few arguments to function ‘calloc’
+   48 |         int * elemento = (int*)calloc(sizeof(int));
+      |                                ^~~~~~
+In file included from test.c:2:
+/nix/store/lcxvgkg659vbvdq86mhxa599wn48f35c-glibc-2.40-36-dev/include/stdlib.h:675:14: note: declared here
+  675 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+9be487a
